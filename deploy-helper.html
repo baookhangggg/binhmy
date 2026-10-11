@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>🚀 Deploy HTX Bình Mỹ - Hướng dẫn nhanh</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',sans-serif;background:linear-gradient(135deg,#2e7d32,#1b5e20);color:#fff;min-height:100vh;padding:20px}
+  .container{max-width:900px;margin:0 auto;background:rgba(255,255,255,.95);color:#1a1a2e;border-radius:20px;padding:40px;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+  h1{color:#1b5e20;font-size:32px;margin-bottom:8px}
+  .sub{color:#666;margin-bottom:32px;font-size:16px}
+  .step{background:#f1f8e9;border:2px solid #66bb6a;border-radius:14px;padding:24px;margin:20px 0;position:relative}
+  .step-num{position:absolute;top:-18px;left:20px;background:#2e7d32;color:#fff;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px}
+  .step h2{color:#1b5e20;font-size:20px;margin-bottom:12px;padding-left:48px}
+  .step p{color:#444;line-height:1.7;margin-bottom:12px}
+  .btn{display:inline-block;padding:14px 28px;background:linear-gradient(135deg,#43a047,#2e7d32);color:#fff;text-decoration:none;border-radius:10px;font-weight:700;margin:8px 8px 8px 0;box-shadow:0 4px 12px rgba(46,125,50,.3);transition:transform .2s}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(46,125,50,.4)}
+  .btn-render{background:linear-gradient(135deg,#ff6f00,#e65100)}
+  .btn-edit{background:linear-gradient(135deg,#1565c0,#0d47a1)}
+  .code{background:#1a1a2e;color:#a5d6a7;padding:14px 18px;border-radius:8px;font-family:'Consolas',monospace;font-size:14px;margin:10px 0;overflow-x:auto}
+  .alert{background:#fff3e0;border-left:4px solid #ff8f00;padding:14px 18px;border-radius:6px;margin:14px 0;color:#5d4037}
+  .success{background:#e8f5e9;border-left:4px solid #2e7d32;padding:14px 18px;border-radius:6px;margin:14px 0;color:#1b5e20}
+  .checklist{list-style:none;padding:0}
+  .checklist li{padding:10px 0;padding-left:30px;position:relative;font-size:15px;color:#333}
+  .checklist li::before{content:'☐';position:absolute;left:0;font-size:20px;color:#888}
+  .checklist li.done::before{content:'✅';color:#2e7d32}
+  .urls{background:#0d1b0f;color:#a5d6a7;padding:18px;border-radius:10px;margin:20px 0}
+  .urls a{color:#66bb6a;font-weight:700}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>🚀 Deploy HTX Bình Mỹ lên Internet</h1>
+  <p class="sub">Hướng dẫn từng bước — tổng cộng ~5 phút</p>
+
+  <div class="alert">
+    <strong>📌 Tóm tắt:</strong> Code đã có sẵn trên GitHub (mọi config đã chuẩn bị xong). Bạn chỉ cần làm <strong>2 thao tác click</strong> là xong.
+  </div>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <h2>Bật GitHub Pages (30 giây)</h2>
+    <p>Mở trang Settings → Pages của repo, đổi Source thành <strong>GitHub Actions</strong>:</p>
+    <a href="https://github.com/baookhangggg/binhmy/settings/pages" target="_blank" class="btn">⚙️ Mở trang Pages Settings</a>
+    <p style="margin-top:14px"><strong>Cách làm:</strong></p>
+    <ol style="padding-left:24px;color:#444;line-height:1.9">
+      <li>Bấm vào nút "Mở trang Pages Settings" ở trên</li>
+      <li>Đăng nhập GitHub nếu chưa (tài khoản <code>baookhangggg</code>)</li>
+      <li>Tìm dòng <strong>"Source"</strong> → bấm dropdown → chọn <strong>"GitHub Actions"</strong></li>
+      <li>Đợi 1-2 phút, tab <strong>Actions</strong> sẽ chạy workflow deploy</li>
+    </ol>
+    <div class="success">✅ Khi xong, website sẽ live tại: <code>https://baookhangggg.github.io/binhmy/</code></div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <h2>Deploy Backend lên Render (2 phút)</h2>
+    <p>Render sẽ <strong>tự động đọc file <code>render.yaml</code></strong> trong repo và tạo service với mọi thứ cấu hình sẵn:</p>
+    <a href="https://render.com/deploy?repo=https://github.com/baookhangggg/binhmy" target="_blank" class="btn btn-render">🚀 Deploy lên Render (1 click)</a>
+    <p style="margin-top:14px"><strong>Cách làm:</strong></p>
+    <ol style="padding-left:24px;color:#444;line-height:1.9">
+      <li>Bấm nút "Deploy lên Render" ở trên</li>
+      <li>Đăng ký/đăng nhập Render bằng GitHub (1 lần duy nhất)</li>
+      <li>Render sẽ hiển thị blueprint từ <code>render.yaml</code> — bấm <strong>"Apply"</strong></li>
+      <li>Đợi 3-5 phút để build & deploy</li>
+      <li>Khi xong, copy URL service (ví dụ: <code>https://htx-binh-my-api.onrender.com</code>)</li>
+    </ol>
+    <div class="alert">⚠️ <strong>Quan trọng:</strong> Sau khi deploy, copy URL chính xác từ Render dashboard.</div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <h2>Cập nhật URL cho Frontend (30 giây)</h2>
+    <p>Sửa 1 dòng trong file <code>public/js/config.js</code> để trỏ tới backend Render vừa tạo:</p>
+    <a href="https://github.com/baookhangggg/binhmy/edit/main/public/js/config.js" target="_blank" class="btn btn-edit">✏️ Sửa config.js</a>
+    <p style="margin-top:14px"><strong>Sửa dòng đầu tiên thành URL Render của bạn:</strong></p>
+    <div class="code">const API_BASE = 'https://htx-binh-my-api.onrender.com/api';</div>
+    <p style="margin-top:10px">Bấm <strong>"Commit changes"</strong> → xong!</p>
+  </div>
+
+  <div class="step">
+    <div class="step-num">✓</div>
+    <h2>Hoàn thành — Kiểm tra</h2>
+    <p>Mở website và kiểm tra mọi thứ hoạt động:</p>
+    <div class="urls">
+      🌐 <strong>Website chính:</strong> <a href="https://baookhangggg.github.io/binhmy/" target="_blank">https://baookhangggg.github.io/binhmy/</a><br>
+      ⚙️ <strong>Trang Admin:</strong> <a href="https://baookhangggg.github.io/binhmy/admin.html" target="_blank">https://baookhangggg.github.io/binhmy/admin.html</a><br>
+      🔌 <strong>API Health:</strong> <a href="https://htx-binh-my-api.onrender.com/api/health" target="_blank">https://htx-binh-my-api.onrender.com/api/health</a>
+    </div>
+    <h3 style="margin-top:18px;color:#1b5e20">🔑 Tài khoản Admin mặc định:</h3>
+    <div class="code">Username: admin<br>Password: HTXBinhMy@2026</div>
+    <p style="margin-top:10px;color:#c62828"><strong>⚠️ Nhớ đổi mật khẩu ngay lần đầu đăng nhập!</strong></p>
+  </div>
+
+  <div class="alert">
+    <strong>🆘 Cần trợ giúp?</strong> Mở file <a href="https://github.com/baookhangggg/binhmy/blob/main/DEPLOY_NHANH.md" target="_blank" style="color:#1b5e20;font-weight:700">DEPLOY_NHANH.md</a> trong repo hoặc hỏi lại tôi.
+  </div>
+</div>
+</body>
+</html>
