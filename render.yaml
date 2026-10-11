@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: htx-binh-my-api
+    runtime: node
+    region: singapore
+    plan: free
+    branch: main
+    buildCommand: npm install && node build.js
+    startCommand: node server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CORS_ORIGIN
+        value: https://baookhangggg.github.io
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ADMIN_USERNAME
+        value: admin
+      - key: ADMIN_PASSWORD
+        value: HTXBinhMy@2026
+      - key: LOG_LEVEL
+        value: info
