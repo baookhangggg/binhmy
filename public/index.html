@@ -1217,69 +1217,6 @@
       line-height: 1.7;
     }
     
-    /* ===== TEAM ===== */
-    .team { background: var(--green-50); }
-    
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-      margin-top: 50px;
-    }
-    
-    .team-card {
-      background: var(--bg-white);
-      border-radius: var(--radius-lg);
-      padding: 28px 20px;
-      text-align: center;
-      box-shadow: var(--shadow-sm);
-      transition: var(--transition);
-    }
-    
-    .team-card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow-md);
-    }
-    
-    .team-avatar {
-      width: 80px; height: 80px;
-      border-radius: 50%;
-      margin: 0 auto 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 32px;
-      font-weight: 800;
-      color: #fff;
-      font-family: 'Playfair Display', serif;
-    }
-    
-    .team-card:nth-child(1) .team-avatar { background: linear-gradient(135deg,var(--green-600),var(--green-800)); }
-    .team-card:nth-child(2) .team-avatar { background: linear-gradient(135deg,var(--amber-500),var(--amber-600)); }
-    .team-card:nth-child(3) .team-avatar { background: linear-gradient(135deg,var(--green-400),var(--green-600)); }
-    .team-card:nth-child(4) .team-avatar { background: linear-gradient(135deg,#1565c0,#0d47a1); }
-    
-    .team-card h4 {
-      font-family: 'Be Vietnam Pro', sans-serif;
-      font-size: 17px;
-      font-weight: 700;
-      color: var(--text-dark);
-      margin-bottom: 4px;
-    }
-    
-    .team-card .role {
-      font-size: 13px;
-      color: var(--green-700);
-      font-weight: 600;
-      margin-bottom: 12px;
-    }
-    
-    .team-card .desc {
-      font-size: 13px;
-      color: var(--text-muted);
-      line-height: 1.6;
-    }
-    
     /* ===== CTA ===== */
     .cta {
       background: linear-gradient(135deg, var(--green-700), var(--green-900));
@@ -1390,7 +1327,6 @@
       .sdgs-grid { grid-template-columns: repeat(3, 1fr); }
       .features-grid { grid-template-columns: repeat(2, 1fr); }
       .bc-grid { grid-template-columns: 1fr; }
-      .team-grid { grid-template-columns: repeat(2, 1fr); }
       .footer-grid { grid-template-columns: 1fr 1fr; }
     }
 
@@ -1435,8 +1371,6 @@
       .features-grid { grid-template-columns: 1fr; gap: 18px; }
       .feature-card { padding: 28px 22px; }
       .about-features { grid-template-columns: 1fr; }
-      .team-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
-      .team-card { padding: 22px 14px; }
       .footer-grid { grid-template-columns: 1fr; gap: 28px; }
       .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
 
@@ -1487,7 +1421,6 @@
       .stat-number { font-size: 30px; }
 
       .sdgs-grid { grid-template-columns: 1fr 1fr; }
-      .team-grid { grid-template-columns: 1fr; }
 
       .about-img-badge { bottom: -12px; right: -8px; padding: 14px 18px; }
       .about-img-badge .big { font-size: 24px; }
@@ -1696,7 +1629,6 @@
     <a href="#sdgs">🌱 SDGs</a>
     <a href="#benefits">📊 Lợi ích</a>
     <a href="#roadmap">🗓 Lộ trình</a>
-    <a href="#team">👥 Đội ngũ</a>
   </nav>
   <div class="nav-drawer-footer">
     <a href="#contact" class="btn btn-primary" onclick="closeNav()">Liên hệ ngay →</a>
@@ -2172,43 +2104,6 @@
   </div>
 </section>
 
-<!-- ===== TEAM ===== -->
-<section class="team section" id="team">
-  <div class="container">
-    <div class="text-center">
-      <div class="section-label">Đội ngũ</div>
-      <h2 class="section-title">Nhóm thực hiện</h2>
-      <p class="section-sub">4 thành viên với đa dạng chuyên môn</p>
-    </div>
-    <div class="team-grid">
-      <div class="team-card" data-aos="fade-up" data-aos-delay="0">
-        <div class="team-avatar">T</div>
-        <h4>Thành viên 1</h4>
-        <div class="role">Trưởng nhóm</div>
-        <p class="desc">Quản lý dự án, điều phối công việc và liên hệ với HTX Bình Mỹ</p>
-      </div>
-      <div class="team-card" data-aos="fade-up" data-aos-delay="100">
-        <div class="team-avatar">P</div>
-        <h4>Thành viên 2</h4>
-        <div class="role">Thiết kế UI/UX</div>
-        <p class="desc">Thiết kế giao diện website, ứng dụng mobile thân thiện với nông dân</p>
-      </div>
-      <div class="team-card" data-aos="fade-up" data-aos-delay="200">
-        <div class="team-avatar">L</div>
-        <h4>Thành viên 3</h4>
-        <div class="role">Lập trình Front-end</div>
-        <p class="desc">Xây dựng giao diện web, tích hợp API, đảm bảo trải nghiệm người dùng</p>
-      </div>
-      <div class="team-card" data-aos="fade-up" data-aos-delay="300">
-        <div class="team-avatar">B</div>
-        <h4>Thành viên 4</h4>
-        <div class="role">Lập trình Back-end</div>
-        <p class="desc">Xây dựng cơ sở dữ liệu, API, hệ thống bảo mật và vận hành</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ===== CTA ===== -->
 <section class="cta section" id="contact">
   <div class="container">
@@ -2335,7 +2230,6 @@
         <ul>
           <li><a href="#benefits">Lợi ích</a></li>
           <li><a href="#roadmap">Lộ trình</a></li>
-          <li><a href="#team">Đội ngũ</a></li>
           <li><a href="#contact">Liên hệ</a></li>
         </ul>
       </div>
