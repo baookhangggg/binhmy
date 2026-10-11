@@ -1380,11 +1380,12 @@
     .footer-bottom a:hover { color: #fff; }
     
     /* ===== RESPONSIVE ===== */
+    /* Tablet: 1024px ↓ */
     @media (max-width: 1024px) {
       .hero-inner { grid-template-columns: 1fr; gap: 40px; }
       .hero-card { max-width: 520px; margin: 0 auto; }
       .about-grid { grid-template-columns: 1fr; gap: 40px; }
-      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
       .problems-grid { grid-template-columns: 1fr; }
       .sdgs-grid { grid-template-columns: repeat(3, 1fr); }
       .features-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1392,21 +1393,189 @@
       .team-grid { grid-template-columns: repeat(2, 1fr); }
       .footer-grid { grid-template-columns: 1fr 1fr; }
     }
-    
+
+    /* Mobile: 768px ↓ */
     @media (max-width: 768px) {
       .nav-links { display: none; }
+      .nav-cta { display: none; }                  /* ẩn CTA để toggle chiếm chỗ */
       .nav-toggle { display: flex; }
       .topbar { display: none; }
-      .section { padding: 70px 0; }
-      .hero-stats { gap: 24px; flex-wrap: wrap; }
-      .stat-number { font-size: 40px; }
-      .solutions-grid { grid-template-columns: 1fr; }
-      .sdgs-grid { grid-template-columns: repeat(2, 1fr); }
-      .features-grid { grid-template-columns: 1fr; }
+
+      .container { padding: 0 16px; }
+      .section { padding: 64px 0; }
+
+      .hero { min-height: auto; padding: 32px 0 24px; }
+      .hero-inner { padding: 32px 0 24px; gap: 32px; }
+      .hero h1 { font-size: clamp(32px, 8vw, 44px); }
+      .hero-desc { font-size: 16px; margin-bottom: 28px; }
+      .hero-actions { gap: 12px; margin-bottom: 32px; }
+      .hero-actions .btn { width: 100%; justify-content: center; }
+      .hero-stats {
+        gap: 18px;
+        flex-wrap: wrap;
+        padding-top: 24px;
+      }
+      .hero-stat-value { font-size: 28px; }
+      .hero-stat-label { font-size: 12px; }
+      .hero-card-header { padding: 22px 22px; }
+      .hero-card-body { padding: 20px 22px; }
+      .hero-card-footer { padding: 14px 22px; }
+
+      .stats-band { padding: 48px 0; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+      .stat-number { font-size: 36px; }
+
+      .section-title { font-size: clamp(26px, 7vw, 36px); }
+      .section-sub { font-size: 16px; }
+
+      .solutions-grid { grid-template-columns: 1fr; gap: 20px; }
+      .sdgs-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+      .sdg-card { padding: 22px 14px; }
+      .sdg-num { width: 46px; height: 46px; font-size: 20px; }
+      .features-grid { grid-template-columns: 1fr; gap: 18px; }
+      .feature-card { padding: 28px 22px; }
       .about-features { grid-template-columns: 1fr; }
-      .team-grid { grid-template-columns: 1fr 1fr; }
-      .footer-grid { grid-template-columns: 1fr; }
+      .team-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+      .team-card { padding: 22px 14px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
       .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+
+      .bc-col-left, .bc-col-right { border-radius: var(--radius-lg); }
+      .bc-header { padding: 20px 22px; font-size: 18px; }
+      .bc-body { padding: 20px 22px; }
+      .benefit-row { flex-direction: column; gap: 12px; }
+      .br-label { width: 100%; padding: 10px 14px; text-align: left;
+                  display: flex; gap: 10px; align-items: baseline; }
+
+      .timeline { padding-left: 32px; margin-top: 40px; }
+      .timeline::before { left: 9px; }
+      .timeline-item { padding-left: 28px; margin-bottom: 32px; }
+      .timeline-item::before { left: -28px; width: 18px; height: 18px; border-width: 3px; }
+      .timeline-item h3 { font-size: 18px; }
+
+      #products-toolbar {
+        flex-direction: column;
+        max-width: 100% !important;
+        margin: 20px 0 !important;
+      }
+      #products-toolbar input,
+      #products-toolbar select { width: 100%; min-height: 44px; }
+
+      .scroll-top {
+        bottom: 18px; right: 18px;
+        width: 44px; height: 44px; font-size: 18px;
+      }
+
+      .cta { padding: 64px 0; }
+      .cta-actions .btn { width: 100%; justify-content: center; }
+    }
+
+    /* Small phones: 480px ↓ */
+    @media (max-width: 480px) {
+      .container { padding: 0 14px; }
+      .section { padding: 52px 0; }
+
+      .hero-card-header { padding: 18px 18px; }
+      .hero-card-body { padding: 16px 18px; }
+      .hero-card-footer { padding: 12px 18px; flex-wrap: wrap; gap: 8px; }
+      .hero-card-item { padding: 12px 0; }
+      .hci-icon { width: 40px; height: 40px; font-size: 18px; }
+      .hci-text h4 { font-size: 14px; }
+      .hci-text p { font-size: 12px; }
+
+      .stats-grid { grid-template-columns: 1fr 1fr; gap: 18px; }
+      .stat-number { font-size: 30px; }
+
+      .sdgs-grid { grid-template-columns: 1fr 1fr; }
+      .team-grid { grid-template-columns: 1fr; }
+
+      .about-img-badge { bottom: -12px; right: -8px; padding: 14px 18px; }
+      .about-img-badge .big { font-size: 24px; }
+
+      .br-label { font-size: 13px; }
+      .br-label .t2 { font-size: 14px; }
+    }
+
+    /* ===== MOBILE DRAWER (off-canvas menu) ===== */
+    .nav-toggle {
+      position: relative;
+      z-index: 1101;            /* nổi trên drawer */
+    }
+
+    .nav-drawer-backdrop {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,.45);
+      opacity: 0; visibility: hidden;
+      transition: opacity .25s ease, visibility .25s ease;
+      z-index: 1100;
+    }
+    .nav-drawer-backdrop.open { opacity: 1; visibility: visible; }
+
+    .nav-drawer {
+      position: fixed; top: 0; right: 0; bottom: 0;
+      width: min(82vw, 320px);
+      background: #fff;
+      box-shadow: -8px 0 28px rgba(0,0,0,.18);
+      transform: translateX(100%);
+      transition: transform .3s cubic-bezier(.4,0,.2,1);
+      z-index: 1101;
+      display: flex; flex-direction: column;
+      visibility: hidden;
+    }
+    .nav-drawer.open { transform: translateX(0); visibility: visible; }
+
+    .nav-drawer-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 20px;
+      border-bottom: 1px solid #eef2f0;
+    }
+    .nav-drawer-header .logo-name { font-size: 16px; }
+    .nav-drawer-close {
+      width: 40px; height: 40px;
+      border: none; background: transparent;
+      font-size: 24px; line-height: 1; cursor: pointer;
+      color: var(--green-800); border-radius: 50%;
+    }
+    .nav-drawer-close:hover { background: var(--green-100); }
+
+    .nav-drawer-links {
+      display: flex; flex-direction: column;
+      padding: 12px 8px;
+      flex: 1; overflow-y: auto;
+    }
+    .nav-drawer-links a {
+      display: flex; align-items: center; gap: 12px;
+      padding: 14px 16px;
+      font-size: 16px; font-weight: 600;
+      color: var(--text-body);
+      border-radius: var(--radius-sm);
+      min-height: 48px;
+    }
+    .nav-drawer-links a:hover,
+    .nav-drawer-links a.active {
+      background: var(--green-100); color: var(--green-800);
+    }
+
+    .nav-drawer-footer {
+      padding: 16px 20px 20px;
+      border-top: 1px solid #eef2f0;
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .nav-drawer-footer .btn { width: 100%; justify-content: center; }
+    .nav-drawer-footer .topbar-info {
+      font-size: 13px; color: var(--text-muted); line-height: 1.7;
+    }
+    .nav-drawer-footer .topbar-info a { color: var(--green-700); }
+
+    body.no-scroll { overflow: hidden; }
+
+    /* Hamburger animation khi mở */
+    .nav-toggle.is-open span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .nav-toggle.is-open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.is-open span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
     }
     
     /* ===== SCROLL TO TOP ===== */
@@ -1498,12 +1667,45 @@
         </a>
       </div>
       
-      <button class="nav-toggle" onclick="toggleNav()">
+      <button class="nav-toggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="navDrawer">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </nav>
+
+<!-- ===== MOBILE DRAWER ===== -->
+<div class="nav-drawer-backdrop" id="navDrawerBackdrop"></div>
+<aside class="nav-drawer" id="navDrawer" role="dialog" aria-modal="true" aria-label="Menu điều hướng">
+  <div class="nav-drawer-header">
+    <a href="#home" class="logo" onclick="closeNav()">
+      <div class="logo-icon">B</div>
+      <div class="logo-text">
+        <div class="logo-name">HTX Bình Mỹ</div>
+        <div class="logo-sub">NÔNG NGHIỆP TP HỒ CHÍ MINH</div>
+      </div>
+    </a>
+    <button class="nav-drawer-close" id="navDrawerClose" type="button" aria-label="Đóng menu">×</button>
+  </div>
+  <nav class="nav-drawer-links">
+    <a href="#home">🏠 Trang chủ</a>
+    <a href="#about">ℹ️ Giới thiệu</a>
+    <a href="#features">✨ Tính năng</a>
+    <a href="#products">🥬 Sản phẩm</a>
+    <a href="#sdgs">🌱 SDGs</a>
+    <a href="#benefits">📊 Lợi ích</a>
+    <a href="#roadmap">🗓 Lộ trình</a>
+    <a href="#team">👥 Đội ngũ</a>
+  </nav>
+  <div class="nav-drawer-footer">
+    <a href="#contact" class="btn btn-primary" onclick="closeNav()">Liên hệ ngay →</a>
+    <div class="topbar-info">
+      📍 Xã Bình Mỹ, TP Hồ Chí Minh<br>
+      📞 <a href="tel:0336255609">0336255609</a><br>
+      📧 <a href="mailto:htxbinhmy@gmail.com">htxbinhmy@gmail.com</a>
+    </div>
+  </div>
+</aside>
 
 <!-- ===== HERO ===== -->
 <section class="hero" id="home">
@@ -2108,47 +2310,67 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init({duration:800,once:true,offset:80});</script>
 
-<!-- Navbar scroll -->
+<!-- Navbar scroll + Drawer -->
 <script>
   const navbar = document.getElementById('navbar');
   const scrollTop = document.getElementById('scrollTop');
-  
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 80) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
-    
-    if (window.scrollY > 500) {
-      scrollTop.classList.add('show');
-    } else {
-      scrollTop.classList.remove('show');
-    }
-  });
-  
-  function toggleNav() {
-    const links = document.querySelector('.nav-links');
-    links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
-    links.style.flexDirection = 'column';
-    links.style.position = 'absolute';
-    links.style.top = '76px';
-    links.style.left = '0';
-    links.style.right = '0';
-    links.style.background = '#fff';
-    links.style.padding = '16px';
-    links.style.boxShadow = '0 8px 20px rgba(0,0,0,.1)';
+
+  // ===== Mobile drawer =====
+  const drawer = document.getElementById('navDrawer');
+  const backdrop = document.getElementById('navDrawerBackdrop');
+  const toggleBtn = document.querySelector('.nav-toggle');
+  const closeBtn = document.getElementById('navDrawerClose');
+  const drawerLinks = document.querySelectorAll('.nav-drawer-links a');
+  const desktopLinks = document.querySelectorAll('.nav-links a');
+  const mqDesktop = window.matchMedia('(min-width: 769px)');
+
+  function openNav() {
+    drawer.classList.add('open');
+    backdrop.classList.add('open');
+    toggleBtn.classList.add('is-open');
+    toggleBtn.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('no-scroll');
   }
-  
-  // Active nav link
+  function closeNav() {
+    drawer.classList.remove('open');
+    backdrop.classList.remove('open');
+    toggleBtn.classList.remove('is-open');
+    toggleBtn.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('no-scroll');
+  }
+  function toggleNav() {
+    drawer.classList.contains('open') ? closeNav() : openNav();
+  }
+  // expose for inline onclick
+  window.toggleNav = toggleNav;
+  window.closeNav = closeNav;
+
+  toggleBtn && toggleBtn.addEventListener('click', toggleNav);
+  closeBtn && closeBtn.addEventListener('click', closeNav);
+  backdrop && backdrop.addEventListener('click', closeNav);
+  drawerLinks.forEach(a => a.addEventListener('click', closeNav));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeNav(); });
+  // Đóng drawer khi quay lại desktop
+  function onMq(e) { if (e.matches) closeNav(); }
+  if (mqDesktop.addEventListener) mqDesktop.addEventListener('change', onMq);
+  else mqDesktop.addListener(onMq); // Safari cũ
+
+  // Active nav link (áp dụng cho cả desktop + drawer)
   const sections = document.querySelectorAll('section[id]');
   window.addEventListener('scroll', () => {
+    if (window.scrollY > 80) navbar.classList.add('scrolled');
+    else navbar.classList.remove('scrolled');
+
+    if (window.scrollY > 500) scrollTop.classList.add('show');
+    else scrollTop.classList.remove('show');
+
     let current = '';
     sections.forEach(sec => {
       const top = sec.offsetTop - 100;
       if (window.scrollY >= top) current = sec.getAttribute('id');
     });
-    document.querySelectorAll('.nav-links a').forEach(a => {
+    const allLinks = document.querySelectorAll('.nav-links a, .nav-drawer-links a');
+    allLinks.forEach(a => {
       a.classList.remove('active');
       if (a.getAttribute('href') === '#' + current) a.classList.add('active');
     });
