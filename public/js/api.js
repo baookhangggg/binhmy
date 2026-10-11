@@ -4,7 +4,7 @@
  * ============================================ */
 
 const API_BASE = (typeof window !== 'undefined' && window.API_BASE)
-  || 'http://localhost:3000/api';
+  || 'https://htx-binh-my-api.onrender.com/api';
 
 // ============== Token storage (sessionStorage: an toàn hơn localStorage) ==============
 const TokenStore = {

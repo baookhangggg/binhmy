@@ -1,0 +1,12 @@
+{
+  "buildCommand": "node build.js",
+  "startCommand": "node server.js",
+  "env": {
+    "NODE_ENV": "production",
+    "CORS_ORIGIN": "https://baookhangggg.github.io",
+    "JWT_SECRET": "REPLACE_WITH_RANDOM_64_HEX_CHARS",
+    "ADMIN_USERNAME": "admin",
+    "ADMIN_PASSWORD": "CHANGE_THIS_PASSWORD",
+    "LOG_LEVEL": "info"
+  }
+}

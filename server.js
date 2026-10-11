@@ -53,7 +53,7 @@ app.use(helmet({
 app.use(compression());
 
 // ============== CORS ==============
-const allowedOrigins = (process.env.CORS_ORIGIN || 'http://localhost:3000,http://localhost:5500,http://127.0.0.1:5500')
+const allowedOrigins = (process.env.CORS_ORIGIN || 'http://localhost:3000,http://localhost:5500,http://127.0.0.1:5500,https://baookhangggg.github.io')
   .split(',').map(s => s.trim());
 app.use(cors({
   origin: (origin, cb) => {
@@ -269,11 +269,15 @@ let server;
   await db.ready();
   auth.seedDefaultUser();
   server = app.listen(PORT, () => {
+  if (isProd && process.env.PORT) {
+    logger.info(`🚀 HTX Bình Mỹ API (production): http://0.0.0.0:${PORT}`);
+  } else {
     logger.info(`🚀 HTX Bình Mỹ API: http://localhost:${PORT}`);
-    logger.info(`   Health:   http://localhost:${PORT}/api/health`);
-    logger.info(`   Products: http://localhost:${PORT}/api/products`);
-    logger.info(`   Login:    POST http://localhost:${PORT}/api/auth/login`);
-    logger.info(`   Default:  ${process.env.ADMIN_USERNAME || 'admin'} / ${process.env.ADMIN_PASSWORD || 'admin123'}`);
+  }
+  logger.info(`   Health:   /api/health`);
+  logger.info(`   Products: /api/products`);
+  logger.info(`   Login:    POST /api/auth/login`);
+  logger.info(`   Default:  ${process.env.ADMIN_USERNAME || 'admin'} / ${process.env.ADMIN_PASSWORD || 'admin123'}`);
   });
   process.on('SIGTERM', () => shutdown('SIGTERM'));
   process.on('SIGINT', () => shutdown('SIGINT'));

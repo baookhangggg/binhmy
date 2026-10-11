@@ -1,11 +1,14 @@
 {
-  "name": "htx-binh-my",
+  "name": "htx-binh-my-backend",
   "version": "1.0.0",
-  "description": "HTX Nông nghiệp Bình Mỹ - Website with REST API backend",
+  "description": "HTX Bình Mỹ - Backend API (production deploy)",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",
