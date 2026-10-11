@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTX Bình Mỹ · Cổng Quản trị HTX</title>
+  <meta name="description" content="Cổng quản trị HTX Nông nghiệp Bình Mỹ: quản lý xã viên, sản lượng, hợp đồng bao tiêu, báo cáo tổng hợp.">
+  <link rel="stylesheet" href="../css/portal.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-htx">
+
+  <div class="portal-topbar">
+    <div class="row">
+      <span>🏛 Đang đăng nhập: <strong>Ban Quản trị HTX Bình Mỹ</strong> · Cấp quản lý</span>
+      <a href="../index.html" class="switch">↩ Về trang chủ</a>
+    </div>
+  </div>
+
+  <header class="portal-header">
+    <div class="row">
+      <a class="brand" href="./">
+        <div class="brand-icon">🏛</div>
+        <div>
+          <div class="brand-name">HTX Bình Mỹ <span class="brand-tag">Ban quản trị</span></div>
+          <div class="brand-sub">Cổng điều hành HTX</div>
+        </div>
+      </a>
+      <nav class="portal-nav" id="portalNav">
+        <a href="#dashboard" class="active">Tổng quan</a>
+        <a href="#xavien">Xã viên</a>
+        <a href="#sanluong">Sản lượng</a>
+        <a href="#hopdong">Hợp đồng</a>
+        <a href="#baocao">Báo cáo</a>
+      </nav>
+      <button class="portal-nav-toggle" id="navToggle" aria-label="Mở menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>🏛 Tổng quan HTX Bình Mỹ</h1>
+      <p>Quản lý xã viên, sản lượng, hợp đồng bao tiêu, báo cáo thống kê và điều phối với doanh nghiệp.</p>
+      <div class="stats">
+        <div class="stat"><div class="v">218</div><div class="l">Xã viên đang hoạt động</div></div>
+        <div class="stat"><div class="v">1.250 tấn</div><div class="l">Sản lượng vụ này</div></div>
+        <div class="stat"><div class="v">42</div><div class="l">Hợp đồng bao tiêu</div></div>
+        <div class="stat"><div class="v">9,8 tỷ</div><div class="l">Doanh thu 2026</div></div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+
+    <!-- Dashboard -->
+    <section class="section" id="dashboard">
+      <h2><span class="ico">📊</span> Chỉ số then chốt</h2>
+      <p class="sub">Tổng hợp từ 218 xã viên · Cập nhật 10:30 sáng nay</p>
+
+      <div class="tiles">
+        <div class="tile">
+          <div class="icon">👥</div>
+          <div>
+            <div class="v">218</div>
+            <div class="l">Xã viên</div>
+            <div class="delta">↑ 12 xã viên mới (Q3/2026)</div>
+          </div>
+        </div>
+        <div class="tile">
+          <div class="icon">📦</div>
+          <div>
+            <div class="v">1.250 tấn</div>
+            <div class="l">Sản lượng vụ Thu 2026</div>
+            <div class="delta">↑ 18% so với cùng kỳ</div>
+          </div>
+        </div>
+        <div class="tile">
+          <div class="icon">💰</div>
+          <div>
+            <div class="v">9,8 tỷ ₫</div>
+            <div class="l">Doanh thu 2026</div>
+            <div class="delta">↑ 22% so với 2025</div>
+          </div>
+        </div>
+        <div class="tile">
+          <div class="icon">🤝</div>
+          <div>
+            <div class="v">42</div>
+            <div class="l">Hợp đồng bao tiêu</div>
+            <div class="delta">+ 8 DN đang đàm phán</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Xã viên -->
+    <section class="section" id="xavien">
+      <h2><span class="ico">👥</span> Quản lý xã viên</h2>
+      <p class="sub">Danh sách xã viên, tình trạng nhật ký VietGAP và đánh giá chất lượng.</p>
+
+      <div class="toolbar">
+        <input type="text" placeholder="🔍 Tìm theo tên / mã xã viên / ấp...">
+        <select>
+          <option>Tất cả trạng thái</option>
+          <option>Đang hoạt động</option>
+          <option>Tạm ngưng</option>
+          <option>Mới gia nhập</option>
+        </select>
+        <button class="btn-primary" type="button">+ Thêm xã viên</button>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Mã</th><th>Họ tên</th><th>Ấp / Lô</th><th>Sản lượng</th><th>VietGAP</th><th>Trạng thái</th><th></th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>XV-0142</td>
+              <td><strong>Nguyễn Văn An</strong></td>
+              <td>Ấp 1 / Lô A2</td>
+              <td>5.200 kg</td>
+              <td><span class="pill pill-green">12/14</span></td>
+              <td><span class="pill pill-blue">Hoạt động</span></td>
+              <td><button class="btn-secondary" type="button">Chi tiết</button></td>
+            </tr>
+            <tr>
+              <td>XV-0089</td>
+              <td><strong>Trần Thị Bé</strong></td>
+              <td>Ấp 2 / Lô B1</td>
+              <td>800 kg</td>
+              <td><span class="pill pill-green">14/14</span></td>
+              <td><span class="pill pill-blue">Hoạt động</span></td>
+              <td><button class="btn-secondary" type="button">Chi tiết</button></td>
+            </tr>
+            <tr>
+              <td>XV-0203</td>
+              <td><strong>Lê Văn Cường</strong></td>
+              <td>Ấp 3 / Lô C3</td>
+              <td>1.500 kg</td>
+              <td><span class="pill pill-amber">9/14</span></td>
+              <td><span class="pill pill-amber">Cần bổ sung NK</span></td>
+              <td><button class="btn-secondary" type="button">Nhắc nhở</button></td>
+            </tr>
+            <tr>
+              <td>XV-0317</td>
+              <td><strong>Phạm Thị Dung</strong></td>
+              <td>Ấp 1 / Lô D4</td>
+              <td>—</td>
+              <td><span class="pill pill-gray">0/14</span></td>
+              <td><span class="pill pill-gray">Mới gia nhập</span></td>
+              <td><button class="btn-primary" type="button">Tập huấn</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Sản lượng -->
+    <section class="section" id="sanluong">
+      <h2><span class="ico">📦</span> Theo dõi sản lượng</h2>
+      <p class="sub">Tổng hợp theo cây trồng và theo xã viên trong vụ hiện tại.</p>
+
+      <div class="grid grid-3">
+        <div class="card">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="pill pill-green">Lúa gạo</span>
+            <span style="font-size:12px; color: var(--p-muted);">Vụ Thu 2026</span>
+          </div>
+          <div style="font-size:28px; font-weight:800; margin: 10px 0 4px;">720 tấn</div>
+          <div style="font-size:13px; color: var(--p-muted);">↑ 12% so với vụ trước</div>
+          <div style="height:8px; background:#e5e7eb; border-radius:999px; margin-top:12px; overflow:hidden;">
+            <div style="width:72%; height:100%; background: var(--p-primary);"></div>
+          </div>
+          <div style="font-size:12px; color: var(--p-muted); margin-top:6px;">72% kế hoạch 1.000 tấn</div>
+        </div>
+        <div class="card">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="pill pill-amber">Rau củ</span>
+            <span style="font-size:12px; color: var(--p-muted);">Vụ Thu 2026</span>
+          </div>
+          <div style="font-size:28px; font-weight:800; margin: 10px 0 4px;">380 tấn</div>
+          <div style="font-size:13px; color: var(--p-muted);">↑ 8% so với vụ trước</div>
+          <div style="height:8px; background:#e5e7eb; border-radius:999px; margin-top:12px; overflow:hidden;">
+            <div style="width:63%; height:100%; background: #d97706;"></div>
+          </div>
+          <div style="font-size:12px; color: var(--p-muted); margin-top:6px;">63% kế hoạch 600 tấn</div>
+        </div>
+        <div class="card">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span class="pill pill-blue">Trái cây</span>
+            <span style="font-size:12px; color: var(--p-muted);">Vụ Thu 2026</span>
+          </div>
+          <div style="font-size:28px; font-weight:800; margin: 10px 0 4px;">150 tấn</div>
+          <div style="font-size:13px; color: var(--p-muted);">↑ 25% so với vụ trước</div>
+          <div style="height:8px; background:#e5e7eb; border-radius:999px; margin-top:12px; overflow:hidden;">
+            <div style="width:50%; height:100%; background: #0e7490;"></div>
+          </div>
+          <div style="font-size:12px; color: var(--p-muted); margin-top:6px;">50% kế hoạch 300 tấn</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hợp đồng -->
+    <section class="section" id="hopdong">
+      <h2><span class="ico">🤝</span> Hợp đồng bao tiêu</h2>
+      <p class="sub">Đối tác doanh nghiệp ký hợp đồng bao tiêu với HTX — phân bổ cho xã viên.</p>
+
+      <div class="list">
+        <div class="list-item">
+          <div class="dot"></div>
+          <div class="body">
+            <h4>Cty TNHH Thực phẩm Xanh Sài Gòn <span class="pill pill-amber">Đàm phán</span></h4>
+            <p>Lúa ST25 · 200 tấn · Giá 15.500 ₫/kg · Giao 20/10 — 30/11/2026</p>
+          </div>
+          <span class="when">Còn 5 ngày</span>
+        </div>
+        <div class="list-item">
+          <div class="dot"></div>
+          <div class="body">
+            <h4>Siêu thị Bách Hóa Xanh <span class="pill pill-green">Đã ký</span></h4>
+            <p>Rau cải VietGAP · 50 tấn/tháng · Giá 10.000 ₫/kg · 12 tháng</p>
+          </div>
+          <span class="when">Còn 11 tháng</span>
+        </div>
+        <div class="list-item">
+          <div class="dot amber"></div>
+          <div class="body">
+            <h4>Cty CP Nông nghiệp VinEco <span class="pill pill-amber">Đàm phán</span></h4>
+            <p>Xoài cát Hòa Lộc · 80 tấn · Giá 52.000 ₫/kg · Giao 25/10</p>
+          </div>
+          <span class="when">Còn 14 ngày</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Báo cáo -->
+    <section class="section" id="baocao">
+      <h2><span class="ico">📈</span> Báo cáo & Xuất dữ liệu</h2>
+      <p class="sub">Báo cáo tự động tổng hợp theo tuần/tháng/quý — phục vụ họp Ban quản trị và báo cáo Sở NN&PTNT.</p>
+
+      <div class="actions">
+        <button class="action" type="button"><span class="ico">📄</span><span class="t">BC tuần 10/2026</span><span class="d">Sản lượng · Doanh thu · VietGAP</span></button>
+        <button class="action" type="button"><span class="ico">📊</span><span class="t">BC quý 3/2026</span><span class="d">So sánh quý, xu hướng</span></button>
+        <button class="action" type="button"><span class="ico">🌾</span><span class="t">Báo cáo VietGAP</span><span class="d">Theo yêu cầu Sở NN&PTNT</span></button>
+        <button class="action" type="button"><span class="ico">💼</span><span class="t">BC tài chính 2026</span><span class="d">Doanh thu, chi phí, lợi nhuận</span></button>
+        <button class="action" type="button"><span class="ico">📥</span><span class="t">Xuất Excel / PDF</span><span class="d">Tải xuống dữ liệu thô</span></button>
+        <button class="action" type="button"><span class="ico">🖨</span><span class="t">In báo cáo</span><span class="d">Gửi Ban Quản trị</span></button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="row">
+      <div>© 2024 HTX Nông nghiệp Bình Mỹ · Cổng Quản trị HTX</div>
+      <div><a href="tel:0336255609">📞 0336255609</a> · <a href="mailto:htxbinhmy@gmail.com">📧 htxbinhmy@gmail.com</a></div>
+    </div>
+  </footer>
+
+  <a class="zalo-fab" href="https://zalo.me/htxbinhmy" target="_blank" rel="noopener" onclick="event.preventDefault(); document.getElementById('zaloChat').classList.add('open');">
+    <span class="label">Chat Zalo OA</span>
+  </a>
+  <div class="zalo-chat" id="zaloChat" role="dialog" aria-label="Chat Zalo OA">
+    <div class="zalo-chat-head">
+      <div class="ava">BM</div>
+      <div class="info">
+        <h4>HTX Bình Mỹ</h4>
+        <p>Đang hoạt động · Zalo OA chính thức</p>
+      </div>
+      <button class="close" type="button" aria-label="Đóng" onclick="document.getElementById('zaloChat').classList.remove('open')">×</button>
+    </div>
+    <div class="zalo-chat-body">
+      <div class="msg">Chào Ban Quản trị! 👋 Cần hỗ trợ báo cáo, hợp đồng bao tiêu, hay kết nối doanh nghiệp?</div>
+      <a class="cta" href="https://zalo.me/htxbinhmy" target="_blank" rel="noopener">Mở Zalo để chat ngay</a>
+      <p class="hint">Hỗ trợ 24/7 · Phản hồi trong 5 phút</p>
+    </div>
+  </div>
+
+  <script>
+    const nav = document.getElementById('portalNav');
+    const tog = document.getElementById('navToggle');
+    tog && tog.addEventListener('click', () => nav.classList.toggle('open'));
+    nav && nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      let cur = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) cur = s.id; });
+      nav.querySelectorAll('a').forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + cur);
+      });
+    });
+  </script>
+</body>
+</html>

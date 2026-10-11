@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTX Bình Mỹ · Cổng Nông dân</title>
+  <meta name="description" content="Cổng dành cho nông dân HTX Bình Mỹ: ghi nhật ký sản xuất, xem giá thị trường, nhận đơn hàng bao tiêu.">
+  <link rel="stylesheet" href="../css/portal.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="portal-topbar">
+    <div class="row">
+      <span>👋 Xin chào, <strong>Nguyễn Văn An</strong> · Xã viên HTX Bình Mỹ</span>
+      <a href="../index.html" class="switch">↩ Về trang chủ HTX</a>
+    </div>
+  </div>
+
+  <header class="portal-header">
+    <div class="row">
+      <a class="brand" href="./">
+        <div class="brand-icon">🌾</div>
+        <div>
+          <div class="brand-name">HTX Bình Mỹ <span class="brand-tag">Nông dân</span></div>
+          <div class="brand-sub">Cổng thành viên</div>
+        </div>
+      </a>
+      <nav class="portal-nav" id="portalNav">
+        <a href="#dashboard" class="active">Tổng quan</a>
+        <a href="#nhatky">Nhật ký</a>
+        <a href="#gia">Giá thị trường</a>
+        <a href="#donhang">Đơn hàng</a>
+        <a href="#truyxuat">Truy xuất</a>
+      </nav>
+      <button class="portal-nav-toggle" id="navToggle" aria-label="Mở menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>👨‍🌾 Chào anh An, hôm nay 11/10/2026</h1>
+      <p>Theo dõi mùa vụ, ghi nhật ký VietGAP tự động và nhận đơn bao tiêu từ doanh nghiệp — tất cả ở một nơi.</p>
+      <div class="stats">
+        <div class="stat"><div class="v">5.2 tấn</div><div class="l">Sản lượng vụ này</div></div>
+        <div class="stat"><div class="v">3</div><div class="l">Đơn hàng mới</div></div>
+        <div class="stat"><div class="v">+18%</div><div class="l">Giá hôm nay</div></div>
+        <div class="stat"><div class="v">12/14</div><div class="l">Nhật ký VietGAP</div></div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+
+    <!-- Dashboard -->
+    <section class="section" id="dashboard">
+      <h2><span class="ico">📊</span> Tổng quan mùa vụ</h2>
+      <p class="sub">Cập nhật tự động từ nhật ký sản xuất của anh.</p>
+
+      <div class="tiles">
+        <div class="tile">
+          <div class="icon">🌾</div>
+          <div>
+            <div class="v">5.200 kg</div>
+            <div class="l">Lúa ST25 — vụ Thu 2026</div>
+            <div class="delta">↑ 8% so với vụ trước</div>
+          </div>
+        </div>
+        <div class="tile">
+          <div class="icon">💰</div>
+          <div>
+            <div class="v">78.000.000 ₫</div>
+            <div class="l">Doanh thu dự kiến</div>
+            <div class="delta">↑ 12% so với vụ trước</div>
+          </div>
+        </div>
+        <div class="tile">
+          <div class="icon">📋</div>
+          <div>
+            <div class="v">12/14</div>
+            <div class="l">Nhật ký VietGAP hoàn thành</div>
+            <div class="delta down">⚠ Còn 2 mục cần bổ sung</div>
+          </div>
+        </div>
+        <div class="tile">
+          <div class="icon">📦</div>
+          <div>
+            <div class="v">3</div>
+            <div class="l">Đơn hàng chờ xác nhận</div>
+            <div class="delta">🤝 Doanh nghiệp đang chờ</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nhật ký -->
+    <section class="section" id="nhatky">
+      <h2><span class="ico">📋</span> Nhật ký sản xuất VietGAP</h2>
+      <p class="sub">Chạm để ghi nhanh — hệ thống tự điền ngày, giờ, tọa độ GPS.</p>
+
+      <div class="actions">
+        <button class="action" type="button"><span class="ico">🌱</span><span class="t">Gieo trồng</span><span class="d">Ghi nhận giống, ngày gieo</span></button>
+        <button class="action" type="button"><span class="ico">💧</span><span class="t">Tưới nước</span><span class="d">Lượng nước, thời gian</span></button>
+        <button class="action" type="button"><span class="ico">🧪</span><span class="t">Bón phân</span><span class="d">Loại phân, liều lượng</span></button>
+        <button class="action" type="button"><span class="ico">🛡</span><span class="t">Phun thuốc BVTV</span><span class="d">Tên thuốc, thời gian cách ly</span></button>
+        <button class="action" type="button"><span class="ico">🌾</span><span class="t">Thu hoạch</span><span class="d">Sản lượng, ngày thu</span></button>
+        <button class="action" type="button"><span class="ico">📷</span><span class="t">Chụp ảnh minh chứng</span><span class="d">Tự động gắn GPS</span></button>
+      </div>
+
+      <h2 style="margin-top:28px;"><span class="ico">🕒</span> Hoạt động gần đây</h2>
+      <div class="list">
+        <div class="list-item">
+          <div class="dot"></div>
+          <div class="body">
+            <h4>Tưới nước — 1.200 m²</h4>
+            <p>Hôm nay · 06:30 · Lô A2, xã Bình Mỹ</p>
+          </div>
+          <span class="when">2 giờ trước</span>
+        </div>
+        <div class="list-item">
+          <div class="dot amber"></div>
+          <div class="body">
+            <h4>Bón phân NPK 16-16-8</h4>
+            <p>Hôm qua · 50 kg · Lô A2</p>
+          </div>
+          <span class="when">1 ngày</span>
+        </div>
+        <div class="list-item">
+          <div class="dot"></div>
+          <div class="body">
+            <h4>Phun thuốc trừ sâu (Anvito 350SC)</h4>
+            <p>3 ngày trước · Cách ly 7 ngày</p>
+          </div>
+          <span class="when">3 ngày</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Giá thị trường -->
+    <section class="section" id="gia">
+      <h2><span class="ico">📈</span> Giá thị trường hôm nay</h2>
+      <p class="sub">Cập nhật real-time từ Sở NN&PTNT TP HCM và các sàn nông sản.</p>
+
+      <div class="toolbar">
+        <input type="text" placeholder="🔍 Tìm sản phẩm...">
+        <select>
+          <option>Tất cả loại</option>
+          <option>Lúa gạo</option>
+          <option>Rau củ</option>
+          <option>Trái cây</option>
+        </select>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Sản phẩm</th><th>Đơn giá</th><th>Biến động</th><th>Nguồn</th><th>Cập nhật</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🌾 Lúa ST25 tươi</td>
+              <td><strong>15.000 ₫/kg</strong></td>
+              <td><span class="pill pill-green">↑ +18%</span></td>
+              <td>Sở NN TP HCM</td>
+              <td>10:30</td>
+            </tr>
+            <tr>
+              <td>🥬 Rau muống VietGAP</td>
+              <td><strong>12.000 ₫/kg</strong></td>
+              <td><span class="pill pill-green">↑ +5%</span></td>
+              <td>Chợ đầu mối Bình Điền</td>
+              <td>10:15</td>
+            </tr>
+            <tr>
+              <td>🍅 Cà chua Đà Lạt</td>
+              <td><strong>22.000 ₫/kg</strong></td>
+              <td><span class="pill pill-red">↓ -8%</span></td>
+              <td>VN Agri</td>
+              <td>09:45</td>
+            </tr>
+            <tr>
+              <td>🥭 Xoài cát Hòa Lộc</td>
+              <td><strong>55.000 ₫/kg</strong></td>
+              <td><span class="pill pill-amber">→ 0%</span></td>
+              <td>Sở NN TP HCM</td>
+              <td>09:30</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Đơn hàng -->
+    <section class="section" id="donhang">
+      <h2><span class="ico">📦</span> Đơn hàng bao tiêu</h2>
+      <p class="sub">Doanh nghiệp đặt mua trực tiếp từ anh — xác nhận ngay trong ngày.</p>
+
+      <div class="list">
+        <div class="list-item">
+          <div class="dot"></div>
+          <div class="body">
+            <h4>Cty TNHH Thực phẩm Xanh Sài Gòn <span class="pill pill-amber">Mới</span></h4>
+            <p>Mua <strong>2.000 kg lúa ST25</strong> · Giá đề xuất 15.500 ₫/kg · Giao ngày 20/10</p>
+          </div>
+          <span style="display:flex; gap:6px;">
+            <button class="btn-primary" type="button">Chấp nhận</button>
+            <button class="btn-secondary" type="button">Từ chối</button>
+          </span>
+        </div>
+        <div class="list-item">
+          <div class="dot amber"></div>
+          <div class="body">
+            <h4>HTX Nông nghiệp Củ Chi</h4>
+            <p>Mua <strong>800 kg rau muống</strong> · Giá 12.000 ₫/kg · Giao ngày 13/10</p>
+          </div>
+          <span style="display:flex; gap:6px;">
+            <button class="btn-primary" type="button">Chấp nhận</button>
+            <button class="btn-secondary" type="button">Từ chối</button>
+          </span>
+        </div>
+        <div class="list-item">
+          <div class="dot"></div>
+          <div class="body">
+            <h4>Siêu thị Bách Hóa Xanh <span class="pill pill-green">Đã chốt</span></h4>
+            <p>Mua <strong>1.500 kg cà chua</strong> · 20.000 ₫/kg · Đã giao 09/10</p>
+          </div>
+          <span class="when">2 ngày trước</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Truy xuất -->
+    <section class="section" id="truyxuat">
+      <h2><span class="ico">🔍</span> Truy xuất nguồn gốc</h2>
+      <p class="sub">Quét QR trên bao bì sản phẩm — người mua thấy đầy đủ thông tin mùa vụ của anh.</p>
+
+      <div class="grid grid-3">
+        <div class="card">
+          <div style="font-size:36px; text-align:center; margin-bottom:8px;">🌾</div>
+          <h3 style="font-size:16px; margin-bottom:4px;">Lô A2 — ST25</h3>
+          <p class="sub" style="margin:0;">Gieo 20/7 · Thu hoạch 15/10 · 5.200 kg</p>
+          <div style="margin-top:12px;">
+            <span class="pill pill-green">VietGAP</span>
+            <span class="pill pill-gray">Đã đóng gói</span>
+          </div>
+          <button class="btn-secondary" type="button" style="margin-top:14px; width:100%;">In mã QR</button>
+        </div>
+        <div class="card">
+          <div style="font-size:36px; text-align:center; margin-bottom:8px;">🥬</div>
+          <h3 style="font-size:16px; margin-bottom:4px;">Lô B1 — Rau muống</h3>
+          <p class="sub" style="margin:0;">Gieo 28/9 · Thu hoạch 12/10 · 800 kg</p>
+          <div style="margin-top:12px;">
+            <span class="pill pill-green">VietGAP</span>
+            <span class="pill pill-amber">Đang chờ thu hoạch</span>
+          </div>
+          <button class="btn-secondary" type="button" style="margin-top:14px; width:100%;">In mã QR</button>
+        </div>
+        <div class="card">
+          <div style="font-size:36px; text-align:center; margin-bottom:8px;">🍅</div>
+          <h3 style="font-size:16px; margin-bottom:4px;">Lô C3 — Cà chua</h3>
+          <p class="sub" style="margin:0;">Gieo 01/8 · Thu hoạch 09/10 · 1.500 kg</p>
+          <div style="margin-top:12px;">
+            <span class="pill pill-green">VietGAP</span>
+            <span class="pill pill-green">Đã xuất bán</span>
+          </div>
+          <button class="btn-secondary" type="button" style="margin-top:14px; width:100%;">Xem lịch sử</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="row">
+      <div>© 2024 HTX Nông nghiệp Bình Mỹ · Cổng Nông dân</div>
+      <div><a href="tel:0336255609">📞 0336255609</a> · <a href="mailto:htxbinhmy@gmail.com">📧 htxbinhmy@gmail.com</a></div>
+    </div>
+  </footer>
+
+  <!-- Zalo OA FAB + chat bubble -->
+  <a class="zalo-fab" href="https://zalo.me/htxbinhmy" target="_blank" rel="noopener" id="zaloFab" onclick="event.preventDefault(); document.getElementById('zaloChat').classList.add('open');">
+    <span class="label">Chat Zalo OA</span>
+  </a>
+
+  <div class="zalo-chat" id="zaloChat" role="dialog" aria-label="Chat Zalo OA">
+    <div class="zalo-chat-head">
+      <div class="ava">BM</div>
+      <div class="info">
+        <h4>HTX Bình Mỹ</h4>
+        <p>Đang hoạt động · Zalo OA chính thức</p>
+      </div>
+      <button class="close" type="button" aria-label="Đóng" onclick="document.getElementById('zaloChat').classList.remove('open')">×</button>
+    </div>
+    <div class="zalo-chat-body">
+      <div class="msg">Xin chào anh! 👋 Em là Zalo OA của HTX Bình Mỹ. Anh cần hỗ trợ ghi nhật ký, xem giá thị trường, hay nhận đơn hàng?</div>
+      <a class="cta" href="https://zalo.me/htxbinhmy" target="_blank" rel="noopener">Mở Zalo để chat ngay</a>
+      <p class="hint">Hỗ trợ 24/7 · Phản hồi trong 5 phút</p>
+    </div>
+  </div>
+
+  <script>
+    // Mobile nav toggle
+    const nav = document.getElementById('portalNav');
+    const tog = document.getElementById('navToggle');
+    tog && tog.addEventListener('click', () => nav.classList.toggle('open'));
+    nav && nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+
+    // Active link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      let cur = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) cur = s.id; });
+      nav.querySelectorAll('a').forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + cur);
+      });
+    });
+  </script>
+</body>
+</html>
