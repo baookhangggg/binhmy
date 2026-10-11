@@ -2041,8 +2041,64 @@
     <div id="products-grid" class="product-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;"></div>
 
     <div class="text-center" style="margin-top:32px;">
-      <a href="/admin.html" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;">
+      <a href="/public/admin.html" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;">
         ⚙️ Quản lý sản phẩm
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CỔNG THEO VAI TRÒ ===== -->
+<section class="section" id="portal-roles" style="background: linear-gradient(160deg, #f1f8e9, #fff9c4);">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Cổng thành viên</div>
+      <h2 class="section-title">Truy cập nhanh theo vai trò</h2>
+      <p class="section-sub">Mỗi bên có giao diện và công cụ riêng — tối ưu cho nhu cầu của nông dân, HTX và doanh nghiệp</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:48px;">
+      <a href="/public/nong-dan/" style="text-decoration:none;color:inherit;background:#fff;border-radius:24px;padding:32px 28px;box-shadow:0 4px 20px rgba(46,125,50,.12);transition:all .3s;display:block;border:2px solid transparent;" onmouseover="this.style.transform='translateY(-6px)';this.style.borderColor='#16a34a';" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='transparent';">
+        <div style="font-size:56px;margin-bottom:12px;">👨‍🌾</div>
+        <h3 style="font-size:22px;margin-bottom:8px;color:#15803d;">Nông dân</h3>
+        <p style="color:#6b7280;line-height:1.7;margin-bottom:16px;">Ghi nhật ký VietGAP, theo dõi sản lượng, nhận đơn hàng bao tiêu và in mã QR truy xuất nguồn gốc.</p>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px;">
+          <span style="background:#dcfce7;color:#15803d;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:600;">📋 Nhật ký</span>
+          <span style="background:#dcfce7;color:#15803d;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:600;">📈 Giá cả</span>
+          <span style="background:#dcfce7;color:#15803d;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:600;">🔍 QR</span>
+        </div>
+        <span class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;font-size:14px;padding:12px 20px;">Vào cổng nông dân →</span>
+      </a>
+
+      <a href="/public/htx/" style="text-decoration:none;color:inherit;background:#fff;border-radius:24px;padding:32px 28px;box-shadow:0 4px 20px rgba(46,125,50,.12);transition:all .3s;display:block;border:2px solid transparent;" onmouseover="this.style.transform='translateY(-6px)';this.style.borderColor='#0e7490';" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='transparent';">
+        <div style="font-size:56px;margin-bottom:12px;">🏛</div>
+        <h3 style="font-size:22px;margin-bottom:8px;color:#155e75;">Hợp tác xã</h3>
+        <p style="color:#6b7280;line-height:1.7;margin-bottom:16px;">Quản lý 218 xã viên, theo dõi sản lượng, ký hợp đồng bao tiêu và xuất báo cáo VietGAP tổng hợp.</p>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px;">
+          <span style="background:#cffafe;color:#155e75;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:600;">👥 Xã viên</span>
+          <span style="background:#cffafe;color:#155e75;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:600;">📊 Báo cáo</span>
+          <span style="background:#cffafe;color:#155e75;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:600;">🤝 HĐ bao tiêu</span>
+        </div>
+        <span class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;font-size:14px;padding:12px 20px;background:linear-gradient(135deg,#0e7490,#155e75);">Vào cổng HTX →</span>
+      </a>
+
+      <a href="/public/doanh-nghiep/" style="text-decoration:none;color:inherit;background:#fff;border-radius:24px;padding:32px 28px;box-shadow:0 4px 20px rgba(46,125,50,.12);transition:all .3s;display:block;border:2px solid transparent;" onmouseover="this.style.transform='translateY(-6px)';this.style.borderColor='#d97706';" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='transparent';">
+        <div style="font-size:56px;margin-bottom:12px;">🏢</div>
+        <h3 style="font-size:22px;margin-bottom:8px;color:#b45309;">Doanh nghiệp</h3>
+        <p style="color:#6b7280;line-height:1.7;margin-bottom:16px;">Tìm nguồn cung nông sản VietGAP, đặt đơn trực tiếp, theo dõi giao nhận và truy xuất nguồn gốc minh bạch.</p>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px;">
+          <span style="background:#fef3c7;color:#92400e;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:600;">🥬 Sản phẩm</span>
+          <span style="background:#fef3c7;color:#92400e;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:600;">🚚 Đơn hàng</span>
+          <span style="background:#fef3c7;color:#92400e;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:600;">🔍 Truy xuất</span>
+        </div>
+        <span class="btn btn-amber" style="display:inline-flex;align-items:center;gap:8px;font-size:14px;padding:12px 20px;background:linear-gradient(135deg,#d97706,#b45309);">Vào cổng doanh nghiệp →</span>
+      </a>
+    </div>
+
+    <div class="text-center" style="margin-top:40px;">
+      <p style="color:#4a4a68;font-size:16px;margin-bottom:8px;">📞 Cần hỗ trợ? Liên hệ ngay qua Zalo OA</p>
+      <a href="https://zalo.me/htxbinhmy" target="_blank" rel="noopener" class="btn btn-primary" style="background:linear-gradient(135deg,#0068ff,#0050cc);display:inline-flex;align-items:center;gap:8px;padding:14px 28px;">
+        💬 Chat Zalo OA: zalo.me/htxbinhmy
       </a>
     </div>
   </div>
