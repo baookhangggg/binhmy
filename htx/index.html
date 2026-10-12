@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="theme-htx">
+<body class="theme-htx" data-role="htx">
 
   <div class="portal-topbar">
     <div class="row">
@@ -41,11 +41,11 @@
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero" data-store="hero">
     <div class="container">
-      <h1>🏛 Tổng quan HTX Bình Mỹ</h1>
-      <p>Quản lý xã viên, sản lượng, hợp đồng bao tiêu, báo cáo thống kê và điều phối với doanh nghiệp.</p>
-      <div class="stats">
+      <h1 data-store="heroTitle">🏛 Tổng quan HTX Bình Mỹ</h1>
+      <p data-store="heroSub">Quản lý xã viên, sản lượng, hợp đồng bao tiêu, báo cáo thống kê và điều phối với doanh nghiệp.</p>
+      <div class="stats" data-store="heroStats">
         <div class="stat"><div class="v">218</div><div class="l">Xã viên đang hoạt động</div></div>
         <div class="stat"><div class="v">1.250 tấn</div><div class="l">Sản lượng vụ này</div></div>
         <div class="stat"><div class="v">42</div><div class="l">Hợp đồng bao tiêu</div></div>
@@ -61,7 +61,7 @@
       <h2><span class="ico">📊</span> Chỉ số then chốt</h2>
       <p class="sub">Tổng hợp từ 218 xã viên · Cập nhật 10:30 sáng nay</p>
 
-      <div class="tiles">
+      <div class="tiles" data-store="tiles">
         <div class="tile">
           <div class="icon">👥</div>
           <div>
@@ -165,44 +165,7 @@
       <h2><span class="ico">📦</span> Theo dõi sản lượng</h2>
       <p class="sub">Tổng hợp theo cây trồng và theo xã viên trong vụ hiện tại.</p>
 
-      <div class="grid grid-3">
-        <div class="card">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <span class="pill pill-green">Lúa gạo</span>
-            <span style="font-size:12px; color: var(--p-muted);">Vụ Thu 2026</span>
-          </div>
-          <div style="font-size:28px; font-weight:800; margin: 10px 0 4px;">720 tấn</div>
-          <div style="font-size:13px; color: var(--p-muted);">↑ 12% so với vụ trước</div>
-          <div style="height:8px; background:#e5e7eb; border-radius:999px; margin-top:12px; overflow:hidden;">
-            <div style="width:72%; height:100%; background: var(--p-primary);"></div>
-          </div>
-          <div style="font-size:12px; color: var(--p-muted); margin-top:6px;">72% kế hoạch 1.000 tấn</div>
-        </div>
-        <div class="card">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <span class="pill pill-amber">Rau củ</span>
-            <span style="font-size:12px; color: var(--p-muted);">Vụ Thu 2026</span>
-          </div>
-          <div style="font-size:28px; font-weight:800; margin: 10px 0 4px;">380 tấn</div>
-          <div style="font-size:13px; color: var(--p-muted);">↑ 8% so với vụ trước</div>
-          <div style="height:8px; background:#e5e7eb; border-radius:999px; margin-top:12px; overflow:hidden;">
-            <div style="width:63%; height:100%; background: #d97706;"></div>
-          </div>
-          <div style="font-size:12px; color: var(--p-muted); margin-top:6px;">63% kế hoạch 600 tấn</div>
-        </div>
-        <div class="card">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <span class="pill pill-blue">Trái cây</span>
-            <span style="font-size:12px; color: var(--p-muted);">Vụ Thu 2026</span>
-          </div>
-          <div style="font-size:28px; font-weight:800; margin: 10px 0 4px;">150 tấn</div>
-          <div style="font-size:13px; color: var(--p-muted);">↑ 25% so với vụ trước</div>
-          <div style="height:8px; background:#e5e7eb; border-radius:999px; margin-top:12px; overflow:hidden;">
-            <div style="width:50%; height:100%; background: #0e7490;"></div>
-          </div>
-          <div style="font-size:12px; color: var(--p-muted); margin-top:6px;">50% kế hoạch 300 tấn</div>
-        </div>
-      </div>
+      <div class="grid grid-3" data-store="productionByCategory"></div>
     </section>
 
     <!-- Hợp đồng -->
@@ -281,6 +244,7 @@
     </div>
   </div>
 
+  <script src="../js/store.js"></script>
   <script>
     const nav = document.getElementById('portalNav');
     const tog = document.getElementById('navToggle');

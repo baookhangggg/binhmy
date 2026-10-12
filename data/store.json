@@ -1,0 +1,275 @@
+{
+  "version": "2026-10-12",
+  "updatedAt": "2026-10-12T21:15:00+07:00",
+  "htx": {
+    "name": "HTX Nông nghiệp Bình Mỹ",
+    "shortName": "HTX Bình Mỹ",
+    "phone": "0336255609",
+    "email": "htxbinhmy@gmail.com",
+    "zaloOA": "https://zalo.me/htxbinhmy",
+    "address": "Xã Bình Mỹ, TP HCM",
+    "members": 218,
+    "foundedYear": 2010
+  },
+  "products": [
+    {
+      "id": "lua-st25",
+      "name": "Lúa ST25",
+      "category": "lua-gao",
+      "categoryLabel": "Lúa gạo",
+      "icon": "🌾",
+      "origin": "Vùng trồng Bình Mỹ",
+      "harvest": "15/10/2026",
+      "lot": "A2",
+      "price": 15000,
+      "unit": "kg",
+      "stock": 12000,
+      "moq": 500,
+      "certification": ["VietGAP"],
+      "status": "Đặt trước",
+      "note": "Giống ST25 chính gốc, gieo sạ 20/07/2026, thu hoạch đúng lịch"
+    },
+    {
+      "id": "rau-muong",
+      "name": "Rau muống VietGAP",
+      "category": "rau-cu",
+      "categoryLabel": "Rau củ",
+      "icon": "🥬",
+      "origin": "Bình Mỹ",
+      "harvest": "Mỗi ngày",
+      "lot": "B1",
+      "price": 12000,
+      "unit": "kg",
+      "stock": 800,
+      "moq": 100,
+      "certification": ["VietGAP"],
+      "status": "Có sẵn",
+      "note": "Thu hoạch mỗi ngày · Giao trong 6h"
+    },
+    {
+      "id": "ca-chua",
+      "name": "Cà chua Đà Lạt",
+      "category": "rau-cu",
+      "categoryLabel": "Rau củ",
+      "icon": "🍅",
+      "origin": "Liên kết HTX Củ Chi",
+      "harvest": "09/10/2026",
+      "lot": "C3",
+      "price": 22000,
+      "unit": "kg",
+      "stock": 1500,
+      "moq": 200,
+      "certification": ["VietGAP"],
+      "status": "Có sẵn",
+      "note": "Lô C3 đã kiểm định dư lượng thuốc BVTV"
+    },
+    {
+      "id": "xoai-cat",
+      "name": "Xoài cát Hòa Lộc",
+      "category": "trai-cay",
+      "categoryLabel": "Trái cây",
+      "icon": "🥭",
+      "origin": "Vùng trồng Bình Mỹ",
+      "harvest": "Đang chờ thu hoạch",
+      "lot": "D4",
+      "price": 45000,
+      "unit": "kg",
+      "stock": 0,
+      "moq": 300,
+      "certification": ["VietGAP"],
+      "status": "Đặt trước",
+      "note": "Dự kiến thu hoạch tháng 11/2026, đặt trước để giữ suất"
+    },
+    {
+      "id": "ca-rot",
+      "name": "Cà rốt Đà Lạt",
+      "category": "rau-cu",
+      "categoryLabel": "Rau củ",
+      "icon": "🥕",
+      "origin": "Liên kết HTX Lâm Đồng",
+      "harvest": "12/10/2026",
+      "lot": "E5",
+      "price": 18000,
+      "unit": "kg",
+      "stock": 2000,
+      "moq": 200,
+      "certification": ["VietGAP", "Hữu cơ"],
+      "status": "Có sẵn",
+      "note": "Trái đều, ngọt, đạt tiêu chuẩn xuất khẩu"
+    },
+    {
+      "id": "bap-ngot",
+      "name": "Bắp ngọt",
+      "category": "rau-cu",
+      "categoryLabel": "Rau củ",
+      "icon": "🌽",
+      "origin": "Vùng trồng Bình Mỹ",
+      "harvest": "14/10/2026",
+      "lot": "F6",
+      "price": 14000,
+      "unit": "kg",
+      "stock": 3500,
+      "moq": 200,
+      "certification": ["VietGAP"],
+      "status": "Có sẵn",
+      "note": "Bắp non, thu hoạch đúng độ chín"
+    }
+  ],
+  "orders": [
+    {
+      "id": "PO-2026-1015",
+      "productId": "rau-muong",
+      "productName": "Rau muống",
+      "quantity": 800,
+      "unit": "kg",
+      "totalValue": 9600000,
+      "status": "Đang vận chuyển",
+      "statusKey": "shipping",
+      "deliveryDate": "11/10/2026",
+      "buyer": "Cty TNHH Thực phẩm Xanh Sài Gòn",
+      "seller": "HTX Bình Mỹ",
+      "driver": "Nguyễn Văn Hùng",
+      "driverPhone": "09**456"
+    },
+    {
+      "id": "PO-2026-1011",
+      "productId": "ca-chua",
+      "productName": "Cà chua",
+      "quantity": 1500,
+      "unit": "kg",
+      "totalValue": 33000000,
+      "status": "Đã nhận",
+      "statusKey": "delivered",
+      "deliveryDate": "09/10/2026",
+      "buyer": "Cty TNHH Thực phẩm Xanh Sài Gòn",
+      "seller": "HTX Bình Mỹ"
+    },
+    {
+      "id": "PO-2026-1008",
+      "productId": "lua-st25",
+      "productName": "Lúa ST25",
+      "quantity": 2000,
+      "unit": "kg",
+      "totalValue": 31000000,
+      "status": "Đàm phán",
+      "statusKey": "negotiating",
+      "deliveryDate": "20/10/2026",
+      "buyer": "Siêu thị Bách Hóa Xanh",
+      "seller": "HTX Bình Mỹ"
+    }
+  ],
+  "lots": [
+    {
+      "id": "BM-A2-2026-10-15",
+      "productId": "lua-st25",
+      "productName": "Lúa ST25 Bình Mỹ",
+      "totalKg": 5200,
+      "sown": "20/07/2026",
+      "harvested": "15/10/2026",
+      "moisture": "14%",
+      "seed": "80 kg/ha",
+      "fertilizer": "NPK 16-16-8 · 200 kg/ha · 22/07/2026",
+      "pesticide": "Anvito 350SC · 15/09/2026 · Cách ly 7 ngày",
+      "logs": [
+        { "date": "20/07/2026", "label": "Gieo sạ", "detail": "80 kg giống/ha" },
+        { "date": "22/07/2026", "label": "Bón lót NPK", "detail": "200 kg/ha" },
+        { "date": "15/09/2026", "label": "Phun thuốc BVTV", "detail": "Anvito 350SC · Cách ly 7 ngày" },
+        { "date": "15/10/2026", "label": "Thu hoạch", "detail": "5.200 kg · Độ ẩm 14%" }
+      ]
+    },
+    {
+      "id": "BM-B1-2026-10-12",
+      "productId": "rau-muong",
+      "productName": "Rau muống Bình Mỹ",
+      "totalKg": 800,
+      "sown": "28/09/2026",
+      "harvested": "12/10/2026",
+      "moisture": "—",
+      "seed": "12 kg/ha",
+      "fertilizer": "Phân hữu cơ vi sinh · 100 kg/ha",
+      "pesticide": "Không sử dụng",
+      "logs": [
+        { "date": "28/09/2026", "label": "Gieo hạt", "detail": "12 kg giống/ha" },
+        { "date": "05/10/2026", "label": "Bón phân hữu cơ", "detail": "100 kg/ha" },
+        { "date": "12/10/2026", "label": "Thu hoạch", "detail": "800 kg" }
+      ]
+    },
+    {
+      "id": "CC-C3-2026-10-09",
+      "productId": "ca-chua",
+      "productName": "Cà chua Củ Chi",
+      "totalKg": 1500,
+      "sown": "01/08/2026",
+      "harvested": "09/10/2026",
+      "moisture": "—",
+      "seed": "0,3 kg/ha",
+      "fertilizer": "Phân chuồng hoai mục",
+      "pesticide": "Abamec 3.6EC · 25/09 · Cách ly 5 ngày",
+      "logs": [
+        { "date": "01/08/2026", "label": "Ươm cây con", "detail": "Giống cà chua Đà Lạt" },
+        { "date": "10/08/2026", "label": "Trồng ra ruộng", "detail": "Mật độ 20.000 cây/ha" },
+        { "date": "25/09/2026", "label": "Phun thuốc BVTV", "detail": "Abamec 3.6EC · Cách ly 5 ngày" },
+        { "date": "09/10/2026", "label": "Thu hoạch", "detail": "1.500 kg" }
+      ]
+    }
+  ],
+  "marketPrices": [
+    { "name": "Lúa ST25", "price": 15500, "unit": "kg", "trend": "up", "change": "+200" },
+    { "name": "Rau muống", "price": 11500, "unit": "kg", "trend": "stable", "change": "0" },
+    { "name": "Cà chua", "price": 20000, "unit": "kg", "trend": "down", "change": "-1.500" },
+    { "name": "Xoài cát Hòa Lộc", "price": 45000, "unit": "kg", "trend": "up", "change": "+2.000" },
+    { "name": "Cà rốt", "price": 17500, "unit": "kg", "trend": "stable", "change": "0" },
+    { "name": "Bắp ngọt", "price": 13500, "unit": "kg", "trend": "up", "change": "+500" }
+  ],
+  "farmerActivities": [
+    { "type": "watering", "icon": "💧", "label": "Tưới nước", "area": "1.200 m²", "when": "Hôm nay · 06:30", "lot": "Lô A2, xã Bình Mỹ" },
+    { "type": "fertilizing", "icon": "🧪", "label": "Bón phân NPK 16-16-8", "amount": "50 kg", "when": "Hôm qua", "lot": "Lô A2" },
+    { "type": "pesticide", "icon": "🛡", "label": "Phun thuốc trừ sâu (Anvito 350SC)", "when": "3 ngày trước · Cách ly 7 ngày", "lot": "Lô A2" }
+  ],
+  "stats": {
+    "nongDan": {
+      "farmerName": "anh An",
+      "today": "11/10/2026",
+      "activeFields": 3,
+      "totalArea": 12000,
+      "monthlyIncome": 18500000,
+      "seasonYield": 5200
+    },
+    "htx": {
+      "members": 218,
+      "totalArea": 145,
+      "monthlyVolume": 38,
+      "partners": 12
+    },
+    "doanhNghiep": {
+      "companyName": "Cty TNHH Thực phẩm Xanh Sài Gòn",
+      "monthlyVolume": 28,
+      "monthlyValue": 412000000,
+      "savingsPercent": 12,
+      "openOrders": 5,
+      "vietgapRate": 100
+    }
+  },
+  "policies": {
+    "payment": [
+      "Cọc 30% khi ký hợp đồng",
+      "Thanh toán 70% trong 7 ngày sau giao nhận",
+      "Hỗ trợ công nợ 30 ngày cho đối tác VIP"
+    ],
+    "delivery": [
+      "Giao tận kho doanh nghiệp trong TP HCM",
+      "Đóng gói theo tiêu chuẩn xuất khẩu",
+      "Biên bản nghiệm thu có xác nhận 2 bên"
+    ],
+    "quality": [
+      "100% đạt chuẩn VietGAP",
+      "Kiểm định dư lượng thuốc BVTV mỗi lô",
+      "Đổi trả miễn phí nếu không đạt cam kết"
+    ],
+    "support": [
+      "Zalo OA hỗ trợ 24/7",
+      "Nhân viên kinh doanh phụ trách riêng",
+      "Báo cáo thị trường định kỳ"
+    ]
+  }
+}
